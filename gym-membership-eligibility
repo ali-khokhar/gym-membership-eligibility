@@ -1,0 +1,19 @@
+name = str(input("What is your name?: "))
+age = int(input("How old are you?: "))
+membership = str(input("Would you like a Basic or Premium Membership?: "))
+
+gym_membership = (name, age, membership)
+
+for x in gym_membership:
+    print(x)
+
+if age >= 18 and "Premium" in membership:
+    print("You are eligible for a Premium Membership!")
+elif age < 16 and "Premium" in membership:
+    print("You are too young for a Gym Membership!")
+elif "Premium" in membership:
+    print("You are not eligible for a Premium Membership but you are eligible for out Basic Membership.")
+if age >= 16 and "Basic" in membership:
+    print("You are eligible for a Basic Membership!")
+elif "Basic" in membership:
+    print("You are too young for a Gym Membership!")
